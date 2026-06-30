@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboards de Transporte - LIPU by TRAXION</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body { background-color: #f8fafc; font-family: system-ui, -apple-system, sans-serif; }
+    .card-link:hover .arrow { transform: translateX(4px); }
+    .arrow { transition: transform 0.2s ease; }
+</style>
+</head>
+<body>
+
+    <header class="bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 flex items-center gap-3">
+            <div class="p-2.5 bg-rose-600 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="16" height="13" x="1" y="5" rx="2" /><polygon points="16 8 20 8 23 11 23 16 16 16 16 8" /><circle cx="5.5" cy="18.5" r="2.5" /><circle cx="18.5" cy="18.5" r="2.5" /></svg>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold">Dashboards de Transporte</h1>
+                <p class="text-xs text-slate-400">LIPU by TRAXION &middot; Panel de accesos</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-10">
+        <p class="text-slate-500 text-sm mb-6">Selecciona la planta para abrir su dashboard de puntualidad, seguridad e incidencias.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+            <a href="YFAIS.html" class="card-link group bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-2.5 h-12 rounded-full bg-rose-500"></div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">YFAIS</h2>
+                        <p class="text-xs text-slate-400">YFAI Ramos &middot; Derramadero &middot; TO &middot; Santa Maria 1 &amp; 2</p>
+                    </div>
+                </div>
+                <svg class="arrow text-slate-300 group-hover:text-rose-500" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+
+            <a href="Daimler.html" class="card-link group bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-2.5 h-12 rounded-full bg-sky-600"></div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">Daimler</h2>
+                        <p class="text-xs text-slate-400">Dashboard de planta</p>
+                    </div>
+                </div>
+                <svg class="arrow text-slate-300 group-hover:text-sky-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+
+            <a href="Mabe.html" class="card-link group bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-2.5 h-12 rounded-full bg-red-600"></div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">Mabe</h2>
+                        <p class="text-xs text-slate-400">Dashboard de planta</p>
+                    </div>
+                </div>
+                <svg class="arrow text-slate-300 group-hover:text-red-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+
+            <a href="JohnDeere.html" class="card-link group bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md transition-shadow p-6 flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-2.5 h-12 rounded-full bg-emerald-600"></div>
+                    <div>
+                        <h2 class="font-bold text-slate-800 text-lg">John Deere</h2>
+                        <p class="text-xs text-slate-400">Dashboard de planta</p>
+                    </div>
+                </div>
+                <svg class="arrow text-slate-300 group-hover:text-emerald-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+
+        </div>
+
+        <p class="text-center text-xs text-slate-300 mt-10">Cada dashboard guarda sus datos por separado, aunque compartan el mismo proyecto de Firebase.</p>
+    </main>
+
+</body>
+</html>
